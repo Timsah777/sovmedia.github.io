@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SOV MEDIA — Filmmaker Vienna · Sovran Reshani</title>
+  <meta name="description" content="SOV MEDIA by Sovran Reshani. Cinematic filmmaker based in Vienna. Weddings, sports, commercial & aerial — real moments, cinematic frames.">
+  <meta property="og:title" content="SOV MEDIA — Filmmaker Vienna">
+  <meta property="og:description" content="Real moments. Cinematic frames. Weddings · Sports · Commercial · Aerial — Vienna & beyond.">
+  <meta property="og:image" content="images/og-hero.jpg">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_AT">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "SOV MEDIA",
+    "founder": { "@type": "Person", "name": "Sovran Reshani" },
+    "description": "Cinematic filmmaker and photographer based in Vienna, Austria",
+    "address": { "@type": "PostalAddress", "addressLocality": "Vienna", "addressCountry": "AT" },
+    "email": "office@sovmedia.at",
+    "sameAs": [
+      "https://www.instagram.com/sovr4n/",
+      "https://www.instagram.com/sov.weddings/"
+    ]
+  }
+  </script>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&display=swap">
+  <link rel="stylesheet" href="css/sov-media.css">
+</head>
+<body>
+
+  <!-- NAV -->
+  <header class="site-header" id="site-header">
+    <nav class="nav container">
+      <a href="index.html" class="nav-logo">
+        <span class="nav-logo-sov">SOV</span><span class="nav-logo-media">MEDIA</span>
+      </a>
+      <div class="nav-links">
+        <a href="weddings.html" data-i18n="nav.weddings">Weddings</a>
+        <a href="sports.html" data-i18n="nav.sports">Sports</a>
+        <a href="commercial.html" data-i18n="nav.commercial">Commercial</a>
+        <button class="lang-toggle" aria-label="Switch language">
+          <span class="lt-en lt-active">EN</span>
+          <span class="lt-sep">|</span>
+          <span class="lt-de">DE</span>
+        </button>
+        <a href="contact.html" class="nav-cta" data-i18n="nav.contact">Contact</a>
+      </div>
+      <button class="hamburger" data-hamburger aria-expanded="false" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <div data-mobile-backdrop class="mobile-backdrop"></div>
+  <nav data-mobile-menu class="mobile-menu">
+    <button class="mobile-menu-close" data-mobile-close aria-label="Close">✕</button>
+    <button class="lang-toggle lang-toggle--mobile" aria-label="Switch language">
+      <span class="lt-en lt-active">EN</span>
+      <span class="lt-sep">|</span>
+      <span class="lt-de">DE</span>
+    </button>
+    <a href="index.html" data-i18n="nav.home">Home</a>
+    <a href="weddings.html">Weddings</a>
+    <a href="sports.html">Sports</a>
+    <a href="commercial.html">Commercial</a>
+    <a href="contact.html" class="mobile-cta" data-i18n="nav.contact">Contact</a>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bg">
+      <!-- Replace with actual hero video or image -->
+      <video autoplay muted loop playsinline class="hero-video" poster="images/hero-poster.jpg" data-skip="3">
+        <source src="videos/hero.mp4" type="video/mp4">
+      </video>
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="hero-content container">
+      <div class="hero-label" data-i18n="hero.label">filmmaker · vienna · beyond</div>
+      <h1 class="hero-title">SOV<span>MEDIA</span></h1>
+      <p class="hero-sub" data-i18n="hero.sub">Real moments. Cinematic frames.</p>
+      <div class="hero-ctas">
+        <a href="weddings.html" class="btn btn-primary" data-i18n="hero.btn.wed">Weddings</a>
+        <a href="sports.html" class="btn btn-ghost" data-i18n="hero.btn.spo">Sports & Events</a>
+        <a href="commercial.html" class="btn btn-ghost" data-i18n="hero.btn.com">Commercial</a>
+      </div>
+    </div>
+    <a href="#services" class="hero-scroll">
+      <span data-i18n="hero.scroll">Scroll</span>
+      <div class="hero-scroll-line"></div>
+    </a>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="section services" id="services">
+    <div class="container">
+      <div class="section-header animate">
+        <span class="section-tag" data-i18n="svc.tag">What I do</span>
+        <h2 data-i18n-html="svc.h2">Every moment deserves<br>a cinematic frame.</h2>
+      </div>
+      <div class="services-grid">
+        <a href="weddings.html" class="service-card animate animate-delay-1">
+          <!-- Replace: images/service-weddings.jpg -->
+          <div class="service-card-img" style="background-image:url('images/service-weddings.jpg')"></div>
+          <div class="service-card-body">
+            <span class="service-num">01</span>
+            <h3 data-i18n="svc.wed.h3">Weddings</h3>
+            <p data-i18n="svc.wed.p">Your wedding, but make it feel like Hollywood. Cinematic films & photos for all cultures, all styles.</p>
+            <span class="service-link" data-i18n="svc.wed.link">View work →</span>
+          </div>
+        </a>
+        <a href="sports.html" class="service-card animate animate-delay-2">
+          <!-- Replace: images/service-sports.jpg -->
+          <div class="service-card-img" style="background-image:url('images/service-sports.jpg')"></div>
+          <div class="service-card-body">
+            <span class="service-num">02</span>
+            <h3 data-i18n="svc.spo.h3">Sports & Events</h3>
+            <p data-i18n="svc.spo.p">Boxing nights, football matches, athlete portraits. The intensity of sport, captured with cinematic precision.</p>
+            <span class="service-link" data-i18n="svc.spo.link">View work →</span>
+          </div>
+        </a>
+        <a href="commercial.html" class="service-card animate animate-delay-3">
+          <!-- Replace: images/service-commercial.jpg -->
+          <div class="service-card-img" style="background-image:url('images/service-commercial.jpg')"></div>
+          <div class="service-card-body">
+            <span class="service-num">03</span>
+            <h3 data-i18n="svc.com.h3">Commercial</h3>
+            <p data-i18n="svc.com.p">Brand content, automotive shoots, aerial drone footage. Creative visuals that sell your story before a word is said.</p>
+            <span class="service-link" data-i18n="svc.com.link">View work →</span>
+          </div>
+        </a>
+        <a href="contact.html" class="service-card service-card--cta animate animate-delay-3">
+          <div class="service-card-body">
+            <span class="service-num">04</span>
+            <h3 data-i18n="svc.idea.h3">Your idea</h3>
+            <p data-i18n="svc.idea.p">Got something different in mind? Portrait, music video, corporate, event? Let's build it together.</p>
+            <span class="service-link" data-i18n="svc.idea.link">Get in touch →</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SELECTED WORKS -->
+  <section class="section portfolio" id="portfolio">
+    <div class="container">
+      <div class="section-header animate">
+        <span class="section-tag" data-i18n="port.tag">Selected Work</span>
+        <h2 data-i18n-html="port.h2">The frames that<br>define the story.</h2>
+      </div>
+    </div>
+    <!-- Replace background-image URLs with actual photos from portfolio -->
+    <div class="portfolio-grid">
+      <div class="portfolio-item portfolio-item--lg animate">
+        <div class="portfolio-img" style="background-image:url('images/work-01.jpg')"></div>
+        <video class="portfolio-video" muted loop playsinline preload="none" poster="images/work-01.jpg" data-skip="3">
+          <source src="videos/work-01.mp4" type="video/mp4">
+        </video>
+        <div class="portfolio-play"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><polygon points="5,3 19,12 5,21"/></svg></div>
+        <div class="portfolio-info">
+          <span class="portfolio-cat" data-i18n="port.cat.wed">Weddings</span>
+          <span class="portfolio-label" data-i18n="port.lbl.vienna">Vienna 2024</span>
+        </div>
+      </div>
+      <div class="portfolio-item animate animate-delay-1">
+        <div class="portfolio-img" style="background-image:url('images/work-02.jpg')"></div>
+        <video class="portfolio-video" muted loop playsinline preload="none" poster="images/work-02.jpg">
+          <source src="videos/work-02.mp4" type="video/mp4">
+        </video>
+        <div class="portfolio-play"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><polygon points="5,3 19,12 5,21"/></svg></div>
+        <div class="portfolio-info">
+          <span class="portfolio-cat" data-i18n="port.cat.spo">Sports</span>
+          <span class="portfolio-label" data-i18n="port.lbl.boxing">Boxing Night</span>
+        </div>
+      </div>
+      <div class="portfolio-item animate animate-delay-2">
+        <div class="portfolio-img" style="background-image:url('images/work-03.jpg')"></div>
+        <video class="portfolio-video" muted loop playsinline preload="none" poster="images/work-03.jpg">
+          <source src="videos/work-03.mp4" type="video/mp4">
+        </video>
+        <div class="portfolio-play"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><polygon points="5,3 19,12 5,21"/></svg></div>
+        <div class="portfolio-info">
+          <span class="portfolio-cat" data-i18n="port.cat.com">Commercial</span>
+          <span class="portfolio-label" data-i18n="port.lbl.auto">Automotive</span>
+        </div>
+      </div>
+      <div class="portfolio-item animate animate-delay-1">
+        <div class="portfolio-img" style="background-image:url('images/work-04.jpg')"></div>
+        <video class="portfolio-video" muted loop playsinline preload="none" poster="images/work-04.jpg" data-skip="4">
+          <source src="videos/work-04.mp4" type="video/mp4">
+        </video>
+        <div class="portfolio-play"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><polygon points="5,3 19,12 5,21"/></svg></div>
+        <div class="portfolio-info">
+          <span class="portfolio-cat" data-i18n="port.cat.wed">Weddings</span>
+          <span class="portfolio-label" data-i18n="port.lbl.cult">Cultural Wedding</span>
+        </div>
+      </div>
+      <div class="portfolio-item portfolio-item--lg animate animate-delay-2">
+        <div class="portfolio-img" style="background-image:url('images/work-05.jpg')"></div>
+        <video class="portfolio-video" muted loop playsinline preload="none" poster="images/work-05.jpg">
+          <source src="videos/work-05.mp4" type="video/mp4">
+        </video>
+        <div class="portfolio-play"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><polygon points="5,3 19,12 5,21"/></svg></div>
+        <div class="portfolio-info">
+          <span class="portfolio-cat" data-i18n="port.cat.spo">Sports</span>
+          <span class="portfolio-label" data-i18n="port.lbl.boxing">Boxing Night</span>
+        </div>
+      </div>
+      <div class="portfolio-item animate animate-delay-3">
+        <div class="portfolio-img" style="background-image:url('images/work-06.jpg')"></div>
+        <video class="portfolio-video" muted loop playsinline preload="none" poster="images/work-06.jpg">
+          <source src="videos/work-06.mp4" type="video/mp4">
+        </video>
+        <div class="portfolio-play"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><polygon points="5,3 19,12 5,21"/></svg></div>
+        <div class="portfolio-info">
+          <span class="portfolio-cat" data-i18n="port.cat.aer">Aerial</span>
+          <span class="portfolio-label" data-i18n="port.lbl.drone">Drone</span>
+        </div>
+      </div>
+    </div>
+    <div class="portfolio-cta-wrap animate">
+      <a href="https://www.instagram.com/sovr4n/" target="_blank" rel="noopener" class="btn btn-outline" data-i18n="port.ig">View all on Instagram →</a>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section about" id="about">
+    <div class="container">
+      <div class="about-grid animate">
+        <div class="about-img-wrap">
+          <!-- Replace: images/sovran-portrait.jpg -->
+          <div class="about-img" style="background-image:url('images/sovran-portrait.jpg')"></div>
+          <div class="about-img-accent"></div>
+        </div>
+        <div class="about-content">
+          <span class="section-tag" data-i18n="about.tag">Behind the lens</span>
+          <h2>Sovran<br>Reshani</h2>
+          <p class="about-role" data-i18n="about.role">Filmmaker & Photographer · Vienna</p>
+          <p data-i18n="about.p1">I'm Sovran — a Vienna-based filmmaker obsessed with one thing: turning real moments into cinematic memories. Boxing rings, first dances, mountain landscapes, brand stories — I find the frame that makes it unforgettable.</p>
+          <p data-i18n="about.p2">From wedding films that feel like movie trailers to fight-night coverage that hits like a broadcast, to drone shots over Kosovo and documentary work in Bosnia — I go wherever the story is.</p>
+          <div class="about-gear">
+            <span>Sony A7 IV</span><span>DJI Mavic 3</span><span>Sigma Art</span><span>Premiere Pro</span>
+          </div>
+          <div class="about-stats">
+            <div>
+              <span class="stat-num">1.5K+</span>
+              <span class="stat-label" data-i18n="about.stat.fol">Followers</span>
+            </div>
+            <div>
+              <span class="stat-num">AT · DE · NL · BA</span>
+              <span class="stat-label" data-i18n="about.stat.loc">Locations shot</span>
+            </div>
+            <div>
+              <span class="stat-num">All</span>
+              <span class="stat-label" data-i18n="about.stat.cul">Cultures</span>
+            </div>
+          </div>
+          <div class="about-ctas">
+            <a href="contact.html" class="btn btn-primary" data-i18n="about.cta">Work with me</a>
+            <a href="https://www.instagram.com/sovr4n/" target="_blank" rel="noopener" class="btn btn-ghost">@sovr4n</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BAND -->
+  <section class="cta-band animate">
+    <div class="container">
+      <div class="cta-band-inner">
+        <h2 data-i18n-html="cta.idx.h2">Ready to create something<br>cinematic?</h2>
+        <a href="contact.html" class="btn btn-lg" data-i18n="cta.idx.btn">Let's talk</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo-wrap">
+            <span class="footer-sov">SOV</span><span class="footer-media">MEDIA</span>
+          </div>
+          <p data-i18n="footer.tag">filmmaker · vienna · beyond</p>
+          <p><a href="mailto:office@sovmedia.at">office@sovmedia.at</a></p>
+        </div>
+        <div class="footer-col">
+          <h4 data-i18n="footer.work">Work</h4>
+          <a href="weddings.html">Weddings</a>
+          <a href="sports.html" data-i18n="footer.work.sports">Sports & Events</a>
+          <a href="commercial.html">Commercial</a>
+        </div>
+        <div class="footer-col">
+          <h4 data-i18n="footer.follow">Follow</h4>
+          <a href="https://www.instagram.com/sovr4n/" target="_blank" rel="noopener">@sovr4n</a>
+          <a href="https://www.instagram.com/sov.weddings/" target="_blank" rel="noopener">@sov.weddings</a>
+        </div>
+        <div class="footer-col">
+          <h4 data-i18n="footer.contact">Contact</h4>
+          <a href="contact.html" data-i18n="footer.contact.link">Get in touch</a>
+          <a href="mailto:office@sovmedia.at">office@sovmedia.at</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p data-i18n="footer.copy">© 2025 SOV MEDIA · Sovran Reshani · Vienna</p>
+        <p style="color:var(--border);" data-i18n="footer.filmed">Filmed in Vienna.</p>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://www.instagram.com/sovr4n/" target="_blank" rel="noopener" class="instagram-fab" aria-label="Instagram @sovr4n">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+      <circle cx="12" cy="12" r="4"/>
+      <circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/>
+    </svg>
+  </a>
+
+
+  <!-- VIDEO LIGHTBOX -->
+  <div class="video-lightbox" id="video-lightbox" role="dialog" aria-modal="true" aria-label="Video abspielen">
+    <div class="video-lightbox-wrap">
+      <button class="video-lightbox-close" id="lightbox-close" aria-label="Schließen">✕ ESC</button>
+      <video id="lightbox-video" controls playsinline></video>
+      <div class="video-lightbox-meta"></div>
+    </div>
+  </div>
+  <script src="js/i18n.js"></script>
+  <script src="js/sov-media.js"></script>
+</body>
+</html>

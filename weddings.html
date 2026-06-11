@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SOV Weddings — Cinematic Wedding Films & Photography · Vienna</title>
+  <meta name="description" content="Your wedding, but make it feel like Hollywood. Real love. Movie vibes. Cinematic wedding films & photography by Sovran Reshani — Vienna & beyond.">
+  <meta property="og:title" content="SOV Weddings — Cinematic Wedding Films · Vienna">
+  <meta property="og:description" content="Your wedding, but make it feel like Hollywood. Real love. Movie vibes. Vienna & beyond.">
+  <meta property="og:image" content="images/weddings-og.jpg">
+  <meta property="og:type" content="website">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&display=swap">
+  <link rel="stylesheet" href="css/sov-media.css">
+</head>
+<body>
+
+  <!-- NAV -->
+  <header class="site-header scrolled" id="site-header">
+    <nav class="nav container">
+      <a href="index.html" class="nav-logo">
+        <span class="nav-logo-sov">SOV</span><span class="nav-logo-media">MEDIA</span>
+      </a>
+      <div class="nav-links">
+        <a href="weddings.html" style="color:var(--accent)" data-i18n="nav.weddings">Weddings</a>
+        <a href="sports.html" data-i18n="nav.sports">Sports</a>
+        <a href="commercial.html" data-i18n="nav.commercial">Commercial</a>
+        <button class="lang-toggle" aria-label="Switch language">
+          <span class="lt-en lt-active">EN</span>
+          <span class="lt-sep">|</span>
+          <span class="lt-de">DE</span>
+        </button>
+        <a href="contact.html" class="nav-cta" data-i18n="nav.contact">Contact</a>
+      </div>
+      <button class="hamburger" data-hamburger aria-expanded="false" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <div data-mobile-backdrop class="mobile-backdrop"></div>
+  <nav data-mobile-menu class="mobile-menu">
+    <button class="mobile-menu-close" data-mobile-close aria-label="Close">✕</button>
+    <button class="lang-toggle lang-toggle--mobile" aria-label="Switch language">
+      <span class="lt-en lt-active">EN</span>
+      <span class="lt-sep">|</span>
+      <span class="lt-de">DE</span>
+    </button>
+    <a href="index.html" data-i18n="nav.home">Home</a>
+    <a href="weddings.html" data-i18n="nav.weddings">Weddings</a>
+    <a href="sports.html">Sports</a>
+    <a href="commercial.html">Commercial</a>
+    <a href="contact.html" class="mobile-cta" data-i18n="nav.contact">Contact</a>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <!-- Replace: images/weddings-hero.jpg — cinematic bride/couple shot -->
+    <div class="page-hero-bg">
+      <video class="page-hero-video" autoplay muted loop playsinline poster="images/weddings-hero.jpg" data-skip="3">
+        <source src="videos/work-01.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class="page-hero-overlay"></div>
+    <div class="page-hero-content container">
+      <span class="page-hero-tag" data-i18n="wed.hero.tag">SOV Weddings</span>
+      <h1 data-i18n-html="wed.hero.h1">Your wedding,<br>but make it feel<br>like Hollywood.</h1>
+      <p data-i18n="wed.hero.p">Real love. Movie vibes. Vienna &amp; beyond.</p>
+    </div>
+  </section>
+
+  <!-- PHILOSOPHY -->
+  <section class="section" style="background:var(--surface)">
+    <div class="container">
+      <div class="about-grid animate">
+        <div class="about-content">
+          <span class="section-tag" data-i18n="wed.app.tag">The approach</span>
+          <h2 data-i18n-html="wed.app.h2">Not just photos.<br>A film.</h2>
+          <p data-i18n="wed.app.p1">Every wedding I shoot is treated like a short film. I'm looking for the stolen glances, the nervous laugh before the vows, the moment the music drops and everything falls into place.</p>
+          <p data-i18n="wed.app.p2">I work across all cultures and traditions — from European church ceremonies to Indian and Arabic celebrations — and I bring the same cinematic intensity to every one.</p>
+          <p data-i18n="wed.app.p3">Multicultural background. Multicultural weddings. Always cinematic.</p>
+          <div class="about-ctas" style="margin-top:8px">
+            <a href="contact.html" class="btn btn-primary" data-i18n="wed.app.cta">Book your date</a>
+            <a href="https://www.instagram.com/sov.weddings/" target="_blank" rel="noopener" class="btn btn-ghost">@sov.weddings</a>
+          </div>
+        </div>
+        <div class="about-img-wrap">
+          <!-- Replace: images/weddings-about.jpg -->
+          <div class="about-img" style="background-image:url('images/weddings-about.jpg');aspect-ratio:4/3"></div>
+          <div class="about-img-accent"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES DETAIL -->
+  <section class="services-detail">
+    <div class="container">
+      <div class="section-header animate">
+        <span class="section-tag" data-i18n="wed.inc.tag">What's included</span>
+        <h2 data-i18n="wed.inc.h2">Choose your format.</h2>
+      </div>
+      <div class="services-detail-grid">
+        <div class="detail-card animate animate-delay-1">
+          <h3 data-i18n="wed.film.h3">Cinematic Film</h3>
+          <p data-i18n="wed.film.p">A short film of your wedding day — edited to music, color-graded, ready to share.</p>
+          <ul>
+            <li data-i18n="wed.film.li1">Full day coverage</li>
+            <li data-i18n="wed.film.li2">Cinematic color grade</li>
+            <li data-i18n="wed.film.li3">Music-driven edit</li>
+            <li data-i18n="wed.film.li4">Highlight reel (3–5 min)</li>
+            <li data-i18n="wed.film.li5">Full ceremony cut</li>
+          </ul>
+        </div>
+        <div class="detail-card animate animate-delay-2">
+          <h3 data-i18n="wed.photo.h3">Photography</h3>
+          <p data-i18n="wed.photo.p">Documentary-style wedding photography — real moments, no stiff poses.</p>
+          <ul>
+            <li data-i18n="wed.photo.li1">Full day coverage</li>
+            <li data-i18n="wed.photo.li2">Edited gallery (300+ photos)</li>
+            <li data-i18n="wed.photo.li3">Ceremony & reception</li>
+            <li data-i18n="wed.photo.li4">Couple portraits</li>
+            <li data-i18n="wed.photo.li5">Digital delivery</li>
+          </ul>
+        </div>
+        <div class="detail-card animate animate-delay-3">
+          <h3 data-i18n="wed.combo.h3">Film + Photo</h3>
+          <p data-i18n="wed.combo.p">The complete package — cinematic film and full photo gallery from one photographer.</p>
+          <ul>
+            <li data-i18n="wed.combo.li1">Everything from both packages</li>
+            <li data-i18n="wed.combo.li2">Consistent visual style</li>
+            <li data-i18n="wed.combo.li3">Reel + gallery delivery</li>
+            <li data-i18n="wed.combo.li4">Instagram-cut teaser</li>
+            <li data-i18n="wed.combo.li5">Priority booking</li>
+          </ul>
+        </div>
+      </div>
+      <div style="text-align:center;margin-top:48px" class="animate">
+        <a href="contact.html" class="btn btn-primary btn-lg" data-i18n="wed.quote.btn">Get a quote</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section class="gallery-section">
+    <div class="container">
+      <div class="section-header animate">
+        <span class="section-tag" data-i18n="wed.gal.tag">Portfolio</span>
+        <h2 data-i18n-html="wed.gal.h2">Real love.<br>Movie vibes.</h2>
+        <div class="gallery-intro">
+          <p data-i18n="wed.gal.p">Every wedding in the gallery below was shot on location in Vienna and beyond. From Viennese palaces to outdoor ceremonies, from European traditions to South Asian celebrations.</p>
+        </div>
+      </div>
+    </div>
+    <!-- Replace background-image values with actual wedding photos -->
+    <div class="gallery-grid">
+      <div class="gallery-item gallery-item--wide" style="background-image:url('images/wed-01.jpg')">
+        <video class="gallery-video" muted loop playsinline preload="none" poster="images/wed-01.jpg" data-skip="4">
+          <source src="videos/wed-01.mp4" type="video/mp4">
+        </video>
+        <div class="play-indicator"><div class="play-indicator-ring"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><polygon points="5,3 19,12 5,21"/></svg></div></div>
+      </div>
+      <div class="gallery-item" style="background-image:url('images/wed-02.jpg')">
+        <video class="gallery-video" muted loop playsinline preload="none" poster="images/wed-02.jpg">
+          <source src="videos/wed-02.mp4" type="video/mp4">
+        </video>
+        <div class="play-indicator"><div class="play-indicator-ring"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><polygon points="5,3 19,12 5,21"/></svg></div></div>
+      </div>
+      <div class="gallery-item" style="background-image:url('images/wed-03.jpg')">
+        <video class="gallery-video" muted loop playsinline preload="none" poster="images/wed-03.jpg" data-skip="3">
+          <source src="videos/wed-03.mp4" type="video/mp4">
+        </video>
+        <div class="play-indicator"><div class="play-indicator-ring"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><polygon points="5,3 19,12 5,21"/></svg></div></div>
+      </div>
+      <div class="gallery-item" style="background-image:url('images/wed-04.jpg')">
+        <video class="gallery-video" muted loop playsinline preload="none" poster="images/wed-04.jpg" data-skip="3">
+          <source src="videos/wed-04.mp4" type="video/mp4">
+        </video>
+        <div class="play-indicator"><div class="play-indicator-ring"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><polygon points="5,3 19,12 5,21"/></svg></div></div>
+      </div>
+      <div class="gallery-item gallery-item--wide" style="background-image:url('images/wed-05.jpg')">
+        <video class="gallery-video" muted loop playsinline preload="none" poster="images/wed-05.jpg" data-skip="3">
+          <source src="videos/wed-05.mp4" type="video/mp4">
+        </video>
+        <div class="play-indicator"><div class="play-indicator-ring"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><polygon points="5,3 19,12 5,21"/></svg></div></div>
+      </div>
+      <div class="gallery-item" style="background-image:url('images/wed-06.jpg')">
+        <video class="gallery-video" muted loop playsinline preload="none" poster="images/wed-06.jpg">
+          <source src="videos/wed-06.mp4" type="video/mp4">
+        </video>
+        <div class="play-indicator"><div class="play-indicator-ring"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><polygon points="5,3 19,12 5,21"/></svg></div></div>
+      </div>
+      <div class="gallery-item" style="background-image:url('images/wed-07.jpg')">
+        <video class="gallery-video" muted loop playsinline preload="none" poster="images/wed-07.jpg">
+          <source src="videos/wed-07.mp4" type="video/mp4">
+        </video>
+        <div class="play-indicator"><div class="play-indicator-ring"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><polygon points="5,3 19,12 5,21"/></svg></div></div>
+      </div>
+      <div class="gallery-item" style="background-image:url('images/wed-08.jpg')">
+        <video class="gallery-video" muted loop playsinline preload="none" poster="images/wed-08.jpg">
+          <source src="videos/wed-08.mp4" type="video/mp4">
+        </video>
+        <div class="play-indicator"><div class="play-indicator-ring"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><polygon points="5,3 19,12 5,21"/></svg></div></div>
+      </div>
+      <div class="gallery-item" style="background-image:url('images/wed-09.jpg')">
+        <video class="gallery-video" muted loop playsinline preload="none" poster="images/wed-09.jpg">
+          <source src="videos/wed-09.mp4" type="video/mp4">
+        </video>
+        <div class="play-indicator"><div class="play-indicator-ring"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><polygon points="5,3 19,12 5,21"/></svg></div></div>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:48px" class="animate">
+      <a href="https://www.instagram.com/sov.weddings/" target="_blank" rel="noopener" class="btn btn-outline" data-i18n="wed.gal.ig">More on @sov.weddings →</a>
+    </div>
+  </section>
+
+  <!-- CTA BAND -->
+  <section class="cta-band animate">
+    <div class="container">
+      <div class="cta-band-inner">
+        <h2 data-i18n-html="cta.wed.h2">Your date is waiting.<br>Let's make it cinematic.</h2>
+        <a href="contact.html" class="btn btn-lg" data-i18n="cta.wed.btn">Book your wedding</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo-wrap">
+            <span class="footer-sov">SOV</span><span class="footer-media">MEDIA</span>
+          </div>
+          <p data-i18n="footer.tag">filmmaker · vienna · beyond</p>
+          <p><a href="mailto:office@sovmedia.at">office@sovmedia.at</a></p>
+        </div>
+        <div class="footer-col">
+          <h4 data-i18n="footer.work">Work</h4>
+          <a href="weddings.html">Weddings</a>
+          <a href="sports.html" data-i18n="footer.work.sports">Sports & Events</a>
+          <a href="commercial.html">Commercial</a>
+        </div>
+        <div class="footer-col">
+          <h4 data-i18n="footer.follow">Follow</h4>
+          <a href="https://www.instagram.com/sovr4n/" target="_blank" rel="noopener">@sovr4n</a>
+          <a href="https://www.instagram.com/sov.weddings/" target="_blank" rel="noopener">@sov.weddings</a>
+        </div>
+        <div class="footer-col">
+          <h4 data-i18n="footer.contact">Contact</h4>
+          <a href="contact.html" data-i18n="footer.contact.link">Get in touch</a>
+          <a href="mailto:office@sovmedia.at">office@sovmedia.at</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p data-i18n="footer.copy">© 2025 SOV MEDIA · Sovran Reshani · Vienna</p>
+        <p style="color:var(--border);" data-i18n="footer.filmed">Filmed in Vienna.</p>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://www.instagram.com/sov.weddings/" target="_blank" rel="noopener" class="instagram-fab" aria-label="Instagram @sov.weddings">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+      <circle cx="12" cy="12" r="4"/>
+      <circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/>
+    </svg>
+  </a>
+
+
+  <!-- VIDEO LIGHTBOX -->
+  <div class="video-lightbox" id="video-lightbox" role="dialog" aria-modal="true" aria-label="Video abspielen">
+    <div class="video-lightbox-wrap">
+      <button class="video-lightbox-close" id="lightbox-close" aria-label="Schließen">✕ ESC</button>
+      <video id="lightbox-video" controls playsinline></video>
+      <div class="video-lightbox-meta"></div>
+    </div>
+  </div>
+  <script src="js/i18n.js"></script>
+  <script src="js/sov-media.js"></script>
+</body>
+</html>
