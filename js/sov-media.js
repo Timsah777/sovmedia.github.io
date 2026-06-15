@@ -138,3 +138,37 @@
 
   });
 })();
+
+/* ─── Hero Timecode (Viewfinder-HUD) ─────────────────────── */
+(function () {
+  function start() {
+    var el = document.querySelector('[data-timecode]');
+    if (!el) return;
+    var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (reduce) { el.textContent = '00:00:00:00'; return; }
+    var t0 = performance.now();
+    function p(n) { return String(n).padStart(2, '0'); }
+    function tick(now) {
+      var t = (now - t0) / 1000;
+      el.textContent = p(Math.floor(t / 3600) % 24) + ':' + p(Math.floor(t / 60) % 60) + ':' + p(Math.floor(t) % 60) + ':' + p(Math.floor(t * 24) % 24);
+      requestAnimationFrame(tick);
+    }
+    requestAnimationFrame(tick);
+  }
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', start);
+  else start();
+})();
+
+/* ─── Service-Cards: Video nur beim Hover ─────────────────── */
+(function () {
+  function init() {
+    document.querySelectorAll('.service-card-hovervid').forEach(function (v) {
+      var card = v.closest('.service-card');
+      if (!card) return;
+      card.addEventListener('mouseenter', function () { var p = v.play(); if (p && p.catch) p.catch(function () {}); });
+      card.addEventListener('mouseleave', function () { v.pause(); try { v.currentTime = 0; } catch (e) {} });
+    });
+  }
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init);
+  else init();
+})();

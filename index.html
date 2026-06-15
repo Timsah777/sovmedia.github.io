@@ -26,6 +26,7 @@
   }
   </script>
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preload" as="image" href="images/hero-poster.jpg" fetchpriority="high">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&display=swap">
@@ -80,6 +81,15 @@
       </video>
       <div class="hero-overlay"></div>
     </div>
+    <div class="viewfinder" aria-hidden="true">
+      <span class="vf-corner vf-tl"></span>
+      <span class="vf-corner vf-tr"></span>
+      <span class="vf-corner vf-bl"></span>
+      <span class="vf-corner vf-br"></span>
+      <div class="vf-hud vf-rec"><span class="vf-dot"></span>REC</div>
+      <div class="vf-hud vf-tc" data-timecode>00:00:00:00</div>
+      <div class="vf-hud vf-spec">2.39:1 · 24 FPS</div>
+    </div>
     <div class="hero-content container">
       <div class="hero-label" data-i18n="hero.label">filmmaker · vienna · beyond</div>
       <h1 class="hero-title">SOV<span>MEDIA</span></h1>
@@ -105,8 +115,8 @@
       </div>
       <div class="services-grid">
         <a href="weddings.html" class="service-card animate animate-delay-1">
-          <!-- Replace: images/service-weddings.jpg -->
           <div class="service-card-img" style="background-image:url('images/service-weddings.jpg'); background-position: center 70%"></div>
+          <video class="service-card-hovervid" muted loop playsinline preload="metadata" src="videos/wed-01.mp4"></video>
           <div class="service-card-body">
             <span class="service-num">01</span>
             <h3 data-i18n="svc.wed.h3">Weddings</h3>
@@ -115,8 +125,8 @@
           </div>
         </a>
         <a href="sports.html" class="service-card animate animate-delay-2">
-          <!-- Replace: images/service-sports.jpg -->
           <div class="service-card-img" style="background-image:url('images/service-sports.jpg'); background-position: center 38%"></div>
+          <video class="service-card-hovervid" muted loop playsinline preload="metadata" src="videos/sport-01.mp4"></video>
           <div class="service-card-body">
             <span class="service-num">02</span>
             <h3 data-i18n="svc.spo.h3">Sports & Events</h3>
@@ -125,9 +135,8 @@
           </div>
         </a>
         <a href="commercial.html" class="service-card animate animate-delay-3">
-          <video class="service-card-img service-card-vid" autoplay muted loop playsinline preload="metadata" poster="images/service-commercial.jpg">
-            <source src="videos/comm-02.mp4" type="video/mp4">
-          </video>
+          <div class="service-card-img" style="background-image:url('images/service-commercial.jpg')"></div>
+          <video class="service-card-hovervid" muted loop playsinline preload="metadata" src="videos/comm-02.mp4"></video>
           <div class="service-card-body">
             <span class="service-num">03</span>
             <h3 data-i18n="svc.com.h3">Commercial</h3>
