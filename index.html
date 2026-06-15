@@ -89,11 +89,11 @@
         <a href="sports.html" class="btn btn-ghost" data-i18n="hero.btn.spo">Sports & Events</a>
         <a href="commercial.html" class="btn btn-ghost" data-i18n="hero.btn.com">Commercial</a>
       </div>
+      <a href="#services" class="hero-scroll">
+        <span data-i18n="hero.scroll">Scroll</span>
+        <div class="hero-scroll-line"></div>
+      </a>
     </div>
-    <a href="#services" class="hero-scroll">
-      <span data-i18n="hero.scroll">Scroll</span>
-      <div class="hero-scroll-line"></div>
-    </a>
   </section>
 
   <!-- SERVICES -->
@@ -106,7 +106,7 @@
       <div class="services-grid">
         <a href="weddings.html" class="service-card animate animate-delay-1">
           <!-- Replace: images/service-weddings.jpg -->
-          <div class="service-card-img" style="background-image:url('images/service-weddings.jpg')"></div>
+          <div class="service-card-img" style="background-image:url('images/service-weddings.jpg'); background-position: center 70%"></div>
           <div class="service-card-body">
             <span class="service-num">01</span>
             <h3 data-i18n="svc.wed.h3">Weddings</h3>
@@ -116,7 +116,7 @@
         </a>
         <a href="sports.html" class="service-card animate animate-delay-2">
           <!-- Replace: images/service-sports.jpg -->
-          <div class="service-card-img" style="background-image:url('images/service-sports.jpg')"></div>
+          <div class="service-card-img" style="background-image:url('images/service-sports.jpg'); background-position: center 38%"></div>
           <div class="service-card-body">
             <span class="service-num">02</span>
             <h3 data-i18n="svc.spo.h3">Sports & Events</h3>
@@ -125,8 +125,9 @@
           </div>
         </a>
         <a href="commercial.html" class="service-card animate animate-delay-3">
-          <!-- Replace: images/service-commercial.jpg -->
-          <div class="service-card-img" style="background-image:url('images/service-commercial.jpg')"></div>
+          <video class="service-card-img service-card-vid" autoplay muted loop playsinline preload="metadata" poster="images/service-commercial.jpg">
+            <source src="videos/comm-02.mp4" type="video/mp4">
+          </video>
           <div class="service-card-body">
             <span class="service-num">03</span>
             <h3 data-i18n="svc.com.h3">Commercial</h3>
