@@ -257,6 +257,9 @@ body.menu-open .mobile-backdrop { display: block; }
   background-position: center top; border-radius: var(--r-md);
 }
 .about-img-vid { width: 100%; object-fit: cover; display: block; }
+/* Hover-Video über dem About-Bild: Foto-Standbild bis Hover, Video nur beim Drüberfahren */
+.about-hovervid { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; border-radius: var(--r-md); opacity: 0; z-index: 1; pointer-events: none; transition: opacity 0.4s ease; }
+.about-img-wrap:hover .about-hovervid { opacity: 1; }
 .about-img-accent {
   position: absolute; top: -16px; left: -16px; right: 16px; bottom: 16px;
   border: 1px solid var(--accent); border-radius: var(--r-md); z-index: -1; opacity: 0.35;

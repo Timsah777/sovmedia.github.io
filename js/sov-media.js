@@ -172,3 +172,17 @@
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init);
   else init();
 })();
+
+/* About-Bild: Video nur beim Hover (Foto-Standbild bis Mauszeiger drauf) */
+(function () {
+  function init() {
+    document.querySelectorAll('.about-hovervid').forEach(function (v) {
+      var wrap = v.closest('.about-img-wrap');
+      if (!wrap) return;
+      wrap.addEventListener('mouseenter', function () { var p = v.play(); if (p && p.catch) p.catch(function () {}); });
+      wrap.addEventListener('mouseleave', function () { v.pause(); try { v.currentTime = 0; } catch (e) {} });
+    });
+  }
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init);
+  else init();
+})();
